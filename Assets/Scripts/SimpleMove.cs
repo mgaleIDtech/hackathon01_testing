@@ -13,8 +13,6 @@ public class SimpleMove : MonoBehaviour
     {
         var pos = transform.position;
 
-        Debug.Log(Time.deltaTime);
-
         if (Input.GetKey(KeyCode.W))
             pos.y = pos.y + 1f * Time.deltaTime;
         else if (Input.GetKey(KeyCode.S))
